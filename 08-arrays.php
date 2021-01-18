@@ -21,4 +21,35 @@ print_r($clientes);
 echo "<br>";
 
 // Count
-echo count($carros);
+$totalClientes =  count($motos);
+echo $totalClientes;
+echo "<hr>";
+
+// Foreach
+foreach($carros as $valor) {
+    echo $valor;
+    echo "<br>";
+}
+
+// Arrays Associativos
+$pessoa = array("nome" => "Rodrigo", "idade" => 23, "altura" => 1.75);
+$pessoa["cidade"] = "Ocara";
+print_r($pessoa);
+
+foreach ($pessoa as $indice => $valor) {
+    echo $indice. ":". $valor;
+    echo "<br>";
+}
+
+// Arrays Multidimensionais
+$times = array(
+    "cariocas"=> array("campeão"=>"vasco", "vice" =>"flamengo", "terceiro"=>"botafogo"),
+    "paulistas"=> array("santos", "sao paulo", "palmeiras"),
+    "bahianos"=> array("bahia", "vitoria", "sport"),   
+);
+echo $times["paulistas"][1];
+echo "<br>";
+
+foreach($times["cariocas"] as $indice => $valor){
+    echo $indice. ":". $valor. "<br>";
+}
