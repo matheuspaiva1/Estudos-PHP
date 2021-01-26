@@ -1,0 +1,109 @@
+/////////// IS_ARRAY /////////////////
+$nomes = array("Rodrigo", "Felipe", "Maria", "José");
+*echo is_array($nomes);*
+
+if (is_array($nomes)):
+    echo "é um array";
+else:
+    echo "não é um array";
+endif;
+
+/////////// IN_ARRAY ///////////
+$nomes = array("Rodrigo", "Felipe", "Maria", "José");
+
+*echo in_array("Rodrigo", $nomes);*
+
+if(in_array("Carlos", $nomes)):
+    echo "existe no array";
+else:
+    echo "não existe";
+endif;
+
+
+/////////// ARRAY_KEYS ///////////
+$nomes = array("Primo" => "Rodrigo", 
+                "Vizinho" => "Felipe", 
+                "Mãe" => "Maria", 
+                "Pai" => "José");
+
+$keys = array_keys($nomes);
+print_r($keys);
+
+/////////// ARRAY_VALUES ///////////
+$nomes = array("Primo" => "Rodrigo", 
+                "Vizinho" => "Felipe", 
+                "Mãe" => "Maria", 
+                "Pai" => "José");
+
+$values = array_values($nomes);
+print_r($values);
+
+/////////// ARRAY_MERGE ///////////
+$carros = array("Camaro", "Uno", "Gol");
+$motos = array("Pop100", "50cc", "cb1000");
+
+$veiculos = array_merge($carros, $motos);
+
+print_r($veiculos);
+
+/////////// ARRAY_POP ///////////
+$carros = array("Camaro", "Uno", "Gol");
+
+print_r($carros);
+echo "<br>";
+echo array_pop($carros);
+echo "<br>";
+print_r($carros);
+
+/////////// ARRAY_SHIFT ///////////
+$carros = array("Camaro", "Uno", "Gol");
+
+print_r($carros);
+echo "<br>";
+echo array_shift($carros);
+echo "<br>";
+print_r($carros);
+
+/////////// ARRAY_UNSHIFT ///////////
+$frutas = array("Uva", "Laranja", "maçã");
+print_r($frutas);
+array_unshift($frutas, "Manga", "Acerola", "Morango");
+echo "<br>";
+print_r($frutas);
+
+/////////// ARRAY_PUSH ///////////
+$frutas = array("Uva", "Laranja", "maçã");
+print_r($frutas);
+array_push($frutas, "Manga", "Acerola", "Morango");
+echo "<br>";
+print_r($frutas);
+
+/////////// ARRAY_COMBINE ///////////
+$keys = array("Campeão", "Vice", "terceiro");
+$values = array("vasco", "Flamengo", "Botafogo");
+
+$times = array_combine($keys, $values);
+print_r($times);
+
+/////////// ARRAY_SUM ///////////
+$soma = array(5,6,10,8);
+echo array_sum($soma);
+
+ou
+
+$soma = array(5,6,10,8);
+$total = array_sum($soma);
+echo $total;
+
+/////////// EXPLODE ///////////
+$data = "30/02/2018";
+$novaData = explode("/", $data);
+print_r($novaData);
+
+/////////// IMPLODE ///////////
+$nomes = array("Rodrigo", "Carlos", "Neusa", "Talita");
+$string = implode(", ", $nomes);
+echo $string;
+
+
+
