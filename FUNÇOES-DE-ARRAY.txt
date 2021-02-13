@@ -1,3 +1,5 @@
+FUNÇÕES COM ARRAYS
+
 /////////// IS_ARRAY /////////////////
 $nomes = array("Rodrigo", "Felipe", "Maria", "José");
 *echo is_array($nomes);*

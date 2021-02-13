@@ -1,5 +1,5 @@
 <?php
-/*
+/* FUNÇÕES COM ARRAYS
  * is_array($array) = verificar se uma determinada variavel é um array
  * in_array($valor, $array)= verifica se um determinado valor existe em alguma posiçã do array
  * array_keys($valor)= retorna um novo array com chaves do array passado como parametro
